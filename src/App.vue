@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- 这里可以放置全局的组件，例如导航栏 -->
+    <Navbar />
+
+    <!-- 路由出口 -->
+    <!-- 路由匹配的组件会在这里显示 -->
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/Navbar.vue"; // 导入导航栏组件
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Navbar, // 注册 Navbar 组件
+  },
+};
 </script>
 
 <style>
+/* 全局样式可以放置在这里或引入外部样式文件 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 </style>
