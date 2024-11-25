@@ -24,8 +24,9 @@
         </div>
       </div>
 
-      <Member />
       <EventShowcase />
+      <Member />
+      
     </div>
   </template>
   
