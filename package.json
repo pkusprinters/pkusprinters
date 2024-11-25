@@ -2,6 +2,7 @@
   "name": "pkusprinters",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://<pkusprinters>.github.io/<pkusprinters>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
