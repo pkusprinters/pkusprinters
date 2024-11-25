@@ -3,7 +3,7 @@
       <!-- <h2>活动剪影</h2> -->
       <div class="event-slider-wrapper">
         <!-- 左侧按钮 -->
-        <button class="prev" @click="scrollLeft">&lt;</button>
+        <!-- <button class="prev" @click="scrollLeft">&lt;</button> -->
         <!-- 活动滑动区域 -->
         <div class="event-slider" ref="slider">
           <div
@@ -21,7 +21,7 @@
           </div>
         </div>
         <!-- 右侧按钮 -->
-        <button class="next" @click="scrollRight">&gt;</button>
+        <!-- <button class="next" @click="scrollRight">&gt;</button> -->
       </div>
     </div>
   </template>
